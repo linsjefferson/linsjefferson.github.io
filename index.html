@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jefferson Lins | Fotógrafo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.8)),
+                        url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=80')
+                        center/cover;
+        }
+
+        header h1 {
+            font-size: 55px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #ddd;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            border: 1px solid #fff;
+            color: #fff;
+            text-decoration: none;
+            transition: .3s;
+        }
+
+        .botao:hover {
+            background: #fff;
+            color: #111;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .titulo {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 50px;
+        }
+
+        .sobre {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color: #ccc;
+            font-size: 18px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+            transition: .3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.02);
+        }
+
+        .contato {
+            text-align: center;
+            background: #181818;
+        }
+
+        .contato p {
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 38px;
+            }
+
+            header p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>JEFFERSON LINS</h1>
+            <p>Fotógrafo | Florianópolis - SC</p>
+            <a href="#portfolio" class="botao">Ver meu trabalho</a>
+        </div>
+    </header>
+
+    <section>
+        <h2 class="titulo">Sobre mim</h2>
+
+        <div class="sobre">
+            <p>
+                Sou Jefferson Lins, fotógrafo apaixonado por transformar
+                momentos, pessoas e histórias em imagens.
+                Meu objetivo é criar fotografias marcantes, naturais
+                e com personalidade.
+            </p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="titulo">Portfólio</h2>
+
+        <div class="galeria">
+
+            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80">
+
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80">
+
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80">
+
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80">
+
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80">
+
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80">
+
+        </div>
+    </section>
+
+    <section class="contato">
+        <h2 class="titulo">Vamos trabalhar juntos?</h2>
+
+        <p>
+            Entre em contato para ensaios, eventos e projetos fotográficos.
+        </p>
+
+        <a href="https://instagram.com/linsjefferson" class="botao">
+            Instagram
+        </a>
+    </section>
+
+    <footer>
+        © 2026 Jefferson Lins — Fotografia
+    </footer>
+
+</body>
+</html>
