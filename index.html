@@ -3,11 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Jefferson Lins | Fotógrafo</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    .inicio {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      letter-spacing: 5px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #ccc;
+      margin-bottom: 35px;
+    }
+
+    .botao {
+      display: inline-block;
+      padding: 14px 30px;
+      border: 1px solid white;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .botao:hover {
+      background: white;
+      color: #111;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>JEFFERSON LINS</h1>
-  <p>Fotógrafo | Florianópolis - SC</p>
-  <a href="#">Ver meu trabalho</a>
+
+  <section class="inicio">
+    <h1>JEFFERSON LINS</h1>
+    <p>Fotógrafo | Florianópolis - SC</p>
+
+    <a href="#trabalho" class="botao">Ver meu trabalho</a>
+  </section>
+
+  <section id="trabalho" style="padding: 80px 20px; text-align: center;">
+    <h2>Meu trabalho</h2>
+    <p style="margin-top: 15px;">
+      Em breve, meu portfólio estará aqui.
+    </p>
+  </section>
+
 </body>
 </html>
